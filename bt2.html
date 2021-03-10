@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            function myFunction() {
+              var ht = document.getElementById("hoten").value;
+              var ns = document.getElementById("namsinh").value;
+              var qq = document.getElementById("quequan").value;
+              var choo = document.getElementById("choo").value;
+              var t = document.getElementById("truong").value;
+              var cn = document.getElementById("chuyennganh").value;
+            
+              
+              document.getElementById("hoten1").innerHTML = ht;
+              document.getElementById("namsinh1").innerHTML = ns
+              document.getElementById("quequan1").innerHTML = qq;
+              document.getElementById("choo1").innerHTML = choo;
+              document.getElementById("truong1").innerHTML = t;
+              document.getElementById("chuyennganh1").innerHTML = cn;
+            
+            }
+        </script>
+    </head>
+    <body style="background-color: burlywood;" >
+        <img src="131890596_3645096625566374_2997694389922335258_n.jpg" style="width:500px; height: 600px; margin-left: 650px; margin-top:50px" >
+        <center  style="padding-top: 100px;"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+          Submit
+         </button>
+        </center>
+    </body>
+    <div class="modal" id="myModal1" style="background-color: bisque;">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              
+              <div class="modal-header">
+                 <h4 class="modal-title">thông tin</h4>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <div class="modal-body">
+        <from>
+              <div class="mb-3">
+                <label  class="hoten">Họ tên</label>
+                <input type="text" class="from-control" id="hoten" >
+              </div>
+              <div class="mb-3">
+                <label  class="namsinh">Năm sinh</label>
+                <input type="text" class="control" id="namsinh">
+              </div>
+              <div class="mb-3">
+                <label  class="quequan">Quê quán</label>
+                <input type="text" class="control" id="quequan">
+              </div>
+                <div class="mb-3">
+                <label  class="choo">chỗ ở</label>
+                <input type="text" class="control" id="noio">
+              </div>
+                <div class="mb-3">
+                <label  class="truong">trường</label>
+                <input type="text" class="control" id="truong">
+              </div>
+                <div class="mb-3">
+                <label  class="chuyennganh">chuyên ngành</label>
+                <input type="text" class="control" id="chuyennganh">
+              </div>
+        </from>
+        <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myDialog" onclick="myFunction()">
+            submit
+          </button>
+        </center>
+
+        <dialog class="modal" id="myDialog">
+            <div class="modal-dialog" >
+                       <div class="modal-content" style="background-color: aqua;">
+                          
+                          <div class="modal-header">
+                             <h4 class="modal-title">Thông tin đăng ký: </h4>
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+              <div class="modal-body">
+            <div class="mb-3">
+               <label  >Họ tên : </label>    <label  id="hoten1"></label>
+            </div>
+            <div class="mb-3">
+               <label  >Năm sinh : </label>    <label  id="namsinh1"></label>
+           
+            </div>
+               <div class="mb-3">
+               <label  >Quê quán : </label>    <label id="quequan1"></label>
+            
+            </div>
+               <div class="mb-3">
+               <label  >chỗ ở : </label>    <label  id="noio1"></label>
+           
+            </div>
+            <div class="mb-3">
+               <label  >Trường : </label>    <label id="truong1" ></label>
+             
+            </div>
+            <div class="mb-3">
+               <label  >Chuyên ngành : </label>    <label id="chuyennganh1" ></label>
+           
+            </div>
+           </dialog>
+           
+             <button type="button" class="btn btn-primary" data-dismiss="modal">
+                   Submit
+              </button>
+    
+</html>

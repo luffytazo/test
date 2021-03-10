@@ -1,0 +1,13 @@
+
+ten= input('ten:')
+namsinh= input('nam sinh:')
+quequan=input('que quan:')
+choo=input('cho o:')
+truong=input('truong:')
+chuyennganh=input('chuyen nganh:')
+print("ten",ten)
+print("nam sinh",namsinh)
+print("que quan",quequan)
+print("cho o",choo)
+print("truong",truong)
+print("chuyen nganh",chuyennganh)

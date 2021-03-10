@@ -1,0 +1,11 @@
+navbar{
+    margin-left: auto;
+}
+left{
+    margin-top: auto;
+}
+section { 
+    display:block;
+    width: 100px;
+    margin-bottom:500px;
+}
